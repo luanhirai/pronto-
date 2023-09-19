@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infoeste 2023</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+
+    <!-- Favicons -->
+
+
+    <!-- Template Main CSS File -->
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+    <script src="assets/script.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Estilo personalizado para a tela de login */
+        body {
+            background-color: #f4f4f4;
+        }
+
+        .container{
+            margin-top: 300px;
+        }
+
+    </style>
+</head>
+
+<body onload="selecionarPalestrante('google')">
+    <header class="cabecalho">
+        <div id="cabecalho-fixo" class="d-flex justify-content-around align-items-center cabeca">
+            <a href="index.html" class="sem-sublinhado"><h1 id="text">35º INFOESTE</h1></a>
+            <!-- Menu "Eventos" com submenu -->
+            <div class="dropdown">
+                <a id="itens_cabeca" class="nav-link dropdown-toggle" href="#" id="eventosDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Eventos
+                </a>
+                <div class="dropdown-menu" aria-labelledby="eventosDropdown">
+                    <a class="dropdown-item" href="#">1ºNETWORKING NIGHT</a>
+                    <a class="dropdown-item" href="#">17º Festa linux</a>
+                    <a class="dropdown-item" href="#">17º Maratona de programação</a>
+                    <a class="dropdown-item" href="#">1º E-SPORTs NIGHT</a>
+                </div>
+            </div>
+
+            <!-- Menu "Palestras" com submenu -->
+            <div class="dropdown">
+                <a id="itens_cabeca" class="nav-link dropdown-toggle" href="#" id="palestrasDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Palestras
+                </a>
+                <div class="dropdown-menu" aria-labelledby="palestrasDropdown">
+                    <a class="dropdown-item" onclick="selecionarPalestrante('google')" href="#pales">Google</a>
+                    <a class="dropdown-item" onclick="selecionarPalestrante('curso-em-video')" href="#pales">Curso em vídeo</a>
+                    <a class="dropdown-item" onclick="selecionarPalestrante('spotify')" href="#pales">Spotify</a>
+                    <a class="dropdown-item" onclick="selecionarPalestrante('meta')" href="#pales">META</a>
+                    <a class="dropdown-item" onclick="selecionarPalestrante('totvs')" href="#pales">TOTVS</a>
+                </div>
+            </div>
+
+            <!-- Menu "Inscrições" com submenu -->
+            <div class="dropdown">
+                <a id="itens_cabeca" class="nav-link dropdown-toggle" href="#" id="inscricoesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Login
+                </a>
+                <div class="dropdown-menu" aria-labelledby="inscricoesDropdown">
+                    <a class="dropdown-item" href="login.html">Login</a>
+                    <a class="dropdown-item" href="cadastro-usuario-curso.html">Cadastrar no curso</a>
+                </div>
+            </div>
+
+            <!-- Menu "Contatos" com submenu -->
+            <div class="dropdown">
+                <a id="itens_cabeca" class="nav-link dropdown-toggle" href="#" id="contatosDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Contatos
+                </a>
+                <div class="dropdown-menu" aria-labelledby="contatosDropdown">
+                    <a class="dropdown-item" href="#">E-mail</a>
+                    <a class="dropdown-item" href="#">Telefone</a>
+                    <a class="dropdown-item" href="#">Endereço</a>
+                </div>
+            </div>
+
+            <img id="img" src="fotos/esse.png" alt="">
+        </div>
+            
+</header>
+<div class="container">
+    <div class="row">
+        <div class="col-md-6 offset-md-3">
+            <div class="login-container">
+                <h2>Tela de Login</h2>
+                <form id="loginForm">
+                    <div class="form-group">
+                        <label for="username">Digite seu nome de usuario:</label>
+                        <input type="text" class="form-control" id="username" placeholder="Digite seu nome de usuário" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Senha:</label>
+                        <input type="password" class="form-control" id="password" placeholder="Digite sua senha" required>
+                    </div>
+                    <button type="submit" class="btn btn-login btn-block">Entrar</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+        <!-- Template Main JS File -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+
+    <script>
+        // Adicione um manipulador de eventos para o envio do formulário
+        document.getElementById('loginForm').addEventListener('submit', function (e) {
+            e.preventDefault(); // Impede o envio padrão do formulário
+
+            // Realize a autenticação aqui (por exemplo, verifique se o CPF e a senha estão corretos)
+            // Se a autenticação for bem-sucedida, exiba a mensagem de pagamento confirmado
+            // Aqui, estamos usando um alerta como exemplo, você pode substituir por uma lógica real de autenticação
+            alert("Autenticação bem-sucedida!");
+
+            window.location.href = "cadastro-curso.html";
+        });
+    </script>
+</body>
+</html>

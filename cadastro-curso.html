@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Curso</title>
+    <!-- Adicione o link para o CSS do Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+
+    <!-- Favicons -->
+
+
+    <!-- Template Main CSS File -->
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+    <script src="assets/script.js"></script>
+    <style>
+
+        .container{
+            margin-top: 300px;
+        }
+
+    </style>
+</head>
+<body>
+    <header class="cabecalho">
+        <div id="cabecalho-fixo" class="d-flex justify-content-around align-items-center cabeca">
+            <a href="index.html" class="sem-sublinhado"><h1 id="text">35º INFOESTE</h1></a>
+            <!-- Menu "Eventos" com submenu -->
+            <div class="dropdown">
+                <a id="itens_cabeca" class="nav-link dropdown-toggle" href="#" id="eventosDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Eventos
+                </a>
+                <div class="dropdown-menu" aria-labelledby="eventosDropdown">
+                    <a class="dropdown-item" href="#">1ºNETWORKING NIGHT</a>
+                    <a class="dropdown-item" href="#">17º Festa linux</a>
+                    <a class="dropdown-item" href="#">17º Maratona de programação</a>
+                    <a class="dropdown-item" href="#">1º E-SPORTs NIGHT</a>
+
+                </div>
+                
+            </div>
+
+            <!-- Menu "Palestras" com submenu -->
+            <div class="dropdown">
+                <a id="itens_cabeca" class="nav-link dropdown-toggle" href="#" id="palestrasDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Palestras
+                </a>
+                <div class="dropdown-menu" aria-labelledby="palestrasDropdown">
+                    <a class="dropdown-item" onclick="selecionarPalestrante('google')" href="#pales">Google</a>
+                    <a class="dropdown-item" onclick="selecionarPalestrante('curso-em-video')" href="#pales">Curso em vídeo</a>
+                    <a class="dropdown-item" onclick="selecionarPalestrante('spotify')" href="#pales">Spotify</a>
+                    <a class="dropdown-item" onclick="selecionarPalestrante('meta')" href="#pales">META</a>
+                    <a class="dropdown-item" onclick="selecionarPalestrante('totvs')" href="#pales">TOTVS</a>
+                </div>
+            </div>
+
+            <!-- Menu "Inscrições" com submenu -->
+            <div class="dropdown">
+                <a id="itens_cabeca" class="nav-link dropdown-toggle" href="#" id="inscricoesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Login
+                </a>
+                <div class="dropdown-menu" aria-labelledby="inscricoesDropdown">
+                    <a class="dropdown-item" href="login.html">Login</a>
+                    <a class="dropdown-item" href="cadastro-usuario-curso.html">Cadastrar no curso</a>
+                </div>
+            </div>
+
+            <!-- Menu "Contatos" com submenu -->
+            <div class="dropdown">
+                <a id="itens_cabeca" class="nav-link dropdown-toggle" href="#" id="contatosDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Contatos
+                </a>
+                <div class="dropdown-menu" aria-labelledby="contatosDropdown">
+                    <a class="dropdown-item" href="#">E-mail</a>
+                    <a class="dropdown-item" href="#">Telefone</a>
+                    <a class="dropdown-item" href="#">Endereço</a>
+                </div>
+            </div>
+
+            <img id="img" src="fotos/esse.png" alt="">
+        </div>
+            
+</header>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 offset-md-2">
+                <div class="cadastro-container">
+                    <h2>Cadastro de Curso</h2>
+                    <form>
+                        <div class="form-group">
+                            <label for="nomeCurso">Nome do Curso:</label>
+                            <input type="text" class="form-control" id="nomeCurso" placeholder="Digite o nome do curso" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="descricaoCurso">Descrição do Curso:</label>
+                            <textarea class="form-control" id="descricaoCurso" rows="4" placeholder="Digite uma descrição do curso" required></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="horaInicio">Duração:</label>
+                            <input type="time" class="form-control" id="horaInicio" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="requisitosMinimos">Requisitos Mínimos:</label>
+                            <textarea class="form-control" id="requisitosMinimos" rows="3" placeholder="Digite os requisitos mínimos" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-cadastrar btn-block" onclick="voltartela()">Cadastrar Curso</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Adicione o link para o JavaScript do Bootstrap e o jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

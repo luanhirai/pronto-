@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infoeste 2023</title>
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="assets/other.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/css/style.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+    <script src="assets/script.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body onload="selecionarPalestrante('google')">
+    <header class="cabecalho">
+        <div id="cabecalho-fixo" class="d-flex justify-content-around align-items-center cabeca">
+            <a href="index.html" class="sem-sublinhado"><h1 id="text">35º INFOESTE</h1></a>
+            <!-- Menu "Eventos" com submenu -->
+            <div class="dropdown">
+                <a id="itens_cabeca" class="nav-link dropdown-toggle" href="#" id="eventosDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Eventos
+                </a>
+                <div class="dropdown-menu" aria-labelledby="eventosDropdown">
+                    <a class="dropdown-item" href="#">1ºNETWORKING NIGHT</a>
+                    <a class="dropdown-item" href="#">17º Festa linux</a>
+                    <a class="dropdown-item" href="#">17º Maratona de programação</a>
+                    <a class="dropdown-item" href="#">1º E-SPORTs NIGHT</a>
+                </div>
+            </div>
+
+            <!-- Menu "Palestras" com submenu -->
+            <div class="dropdown">
+                <a id="itens_cabeca" class="nav-link dropdown-toggle" href="#" id="palestrasDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Palestras
+                </a>
+                <div class="dropdown-menu" aria-labelledby="palestrasDropdown">
+                    <a class="dropdown-item" onclick="selecionarPalestrante('google')" href="#pales">Google</a>
+                    <a class="dropdown-item" onclick="selecionarPalestrante('curso-em-video')" href="#pales">Curso em vídeo</a>
+                    <a class="dropdown-item" onclick="selecionarPalestrante('spotify')" href="#pales">Spotify</a>
+                    <a class="dropdown-item" onclick="selecionarPalestrante('meta')" href="#pales">META</a>
+                    <a class="dropdown-item" onclick="selecionarPalestrante('totvs')" href="#pales">TOTVS</a>
+                </div>
+            </div>
+
+            <!-- Menu "Inscrições" com submenu -->
+            <div class="dropdown">
+                <a id="itens_cabeca" class="nav-link dropdown-toggle" href="#" id="inscricoesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Login
+                </a>
+                <div class="dropdown-menu" aria-labelledby="inscricoesDropdown">
+                    <a class="dropdown-item" href="login.html">Login</a>
+                    <a class="dropdown-item" href="cadastro-usuario-curso.html">Cadastrar no curso</a>
+                </div>
+            </div>
+
+            <!-- Menu "Contatos" com submenu -->
+            <div class="dropdown">
+                <a id="itens_cabeca" class="nav-link dropdown-toggle" href="#" id="contatosDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Contatos
+                </a>
+                <div class="dropdown-menu" aria-labelledby="contatosDropdown">
+                    <a class="dropdown-item" href="#">E-mail</a>
+                    <a class="dropdown-item" href="#">Telefone</a>
+                    <a class="dropdown-item" href="#">Endereço</a>
+                </div>
+            </div>
+
+            <img id="img" src="fotos/esse.png" alt="">
+        </div>
+            
+</header>
+<div id="foto">
+    <!-- <img class="foto2" src="fotos/Texto do seu parágrafo (1).png" alt=""> -->
+</div>
+<main>
+    <section id="gallery" class="gallery">
+        <div class="d-flex justify-content-center ">
+            <h1 id="pales">PALESTRANTES</h1>
+        </div>
+        <div class="container">
+          <div class="row gallery-container">
+      
+            <div class="col-lg-4 col-md-6 border gallery-item filter-vacation">
+                <div class="gallery-wrap">
+                  <img src="imagem/imagem-curso-em-video.png" class="img-fluid" alt="">
+                  <div class="gallery-info">
+                    <h4>Curso em vídeo</h4>
+                    <p>Programação em nuvem</p>
+                    <div class="gallery-links">
+                      <a href="imagem/imagem-curso-em-video.png" class="glightbox" title="Vacation 3"><i class="bx bx-plus"></i></a>
+                    </div>
+                  </div>
+                </div>
+            </div>
+      
+            <div class="col-lg-4 col-md-6 gallery-item filter-beach">
+              <div class="gallery-wrap">
+                <img src="imagem/imagem-google.png" class="img-fluid" alt="">
+                <div class="gallery-info">
+                  <h4>Google</h4>
+                  <p>Visão Computacional</p>
+                  <div class="gallery-links">
+                    <a href="imagem/imagem-google.png" class="glightbox" title="Google"><i class="bx bx-plus"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+      
+            <div class="col-lg-4 col-md-6 gallery-item filter-home">
+              <div class="gallery-wrap">
+                <img src="imagem/imagem-meta.jpg" class="img-fluid" alt="">
+                <div class="gallery-info">
+                  <h4>META</h4>
+                  <p>VR</p>
+                  <div class="gallery-links">
+                    <a href="imagem/imagem-meta.jpg" class="glightbox" title="META"><i class="bx bx-plus"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+      
+            <div class="col-lg-4 col-md-6 gallery-item filter-beach">
+              <div class="gallery-wrap">
+                <img src="imagem/imagem-spotify.png" class="img-fluid" alt="">
+                <div class="gallery-info">
+                  <h4>spotify</h4>
+                  <p>DEVOPS</p>
+                  <div class="gallery-links">
+                    <a href="imagem/imagem-spotify.png" class="glightbox" title="spotify"><i class="bx bx-plus"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+      
+            <div class="col-lg-4 col-md-6 gallery-item filter-beach">
+              <div class="gallery-wrap">
+                <img src="imagem/imagem-totvs.jpg" class="img-fluid" alt="">
+                <div class="gallery-info">
+                  <h4>TOTVS</h4>
+                  <p>FLUIG</p>
+                  <div class="gallery-links">
+                    <a href="imagem/imagem-totvs.jpg" class="glightbox" title="TOTVS"><i class="bx bx-plus"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+      
+          </div>
+      
+        </div>
+    </section>
+    <div class="eventos d-flex flex-column">
+      <div class="teste">
+          <h1 class="titulo-eventos d-flex flex-row justify-content-center">EVENTOS</h1>
+          <div class="eventos-encima d-flex flex-column">
+              <a href="#">
+                  <div class="eventos-itens">
+                      <img src="fotos/imagem-networking.svg" alt="">
+                      <h1>Networking Night</h1>
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                  </div>
+              </a>
+              
+              <a href="#">
+                  <div class="eventos-itens">
+                      <img src="fotos/imagem-linux.svg" alt="">
+                      <h1>Festa Linux</h1>
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                  </div>
+              </a>
+              
+              <a href="#">
+                  <div class="eventos-itens">
+                      <img src="fotos/imagem-maratona.svg" alt="">
+                      <h1>Maratona de Programação</h1>
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                  </div>
+              </a>
+          </div>
+  
+          <div class="parte-baixo d-flex flex-column" >
+              <a href="#">
+                  <div class="eventos-itens">
+                      <img src="fotos/imagem-e-sport.svg" alt="">
+                      <h1>E-sports Night</h1>
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                  </div>
+              </a>
+              <a href="#">
+                  <div class="eventos-itens">
+                      <img src="fotos/imagem-fippetec.svg" alt="">
+                      <h1>FIPPETEC</h1>
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                  </div>
+              </a>
+          </div>
+      </div>
+  </div>
+</main>
+<div class="parceiros">
+  <h1 class="titulo-eventos d-flex flex-row justify-content-center">Colaboradores</h1>
+  <div class="colab">
+      <div class="fotos d-flex flex-column">
+          <a href="https://analytics2go.com/"><img src="imagem/A2Go.png" alt=""></a>
+          <a href="https://www.b3.com.br/pt_br/institucional"><img src="imagem/B3.svg" alt=""></a>
+          <a href="https://www.cobmais.com.br/"><img src="imagem/cobmais.png" alt=""></a>
+          <a href="https://www.egestora.com.br/"><img src="imagem/EGestora.png" alt=""></a>
+          <a href="http://facopp.unoeste.br/facopp/"><img src="imagem/EscolaComunicacao.png" alt=""></a>
+      </div>
+
+      <div class="fotos d-flex flex-column">
+          <a href="https://www.havan.com.br/"><img src="imagem/Havan.png" alt=""></a>
+          <a href="https://www.itau.com.br/"><img src="imagem/Itau.png" alt=""></a>
+          <a href="https://www.instagram.com/gourmetuniversitariopp/"><img src="imagem/logo-espaco goumert.jpg" alt=""></a>
+          <a href="https://www.smarthint.co/"><img src="imagem/Magalu.png" alt=""></a>
+          <a href="https://www.unoeste.br/AUnoeste/Nedhu"><img src="imagem/NEDHU.png" alt=""></a>
+      </div>
+
+      <div class="fotos d-flex flex-column">
+          <a href="https://www.rubcube.com/"><img src="imagem/rubcube.svg" alt=""></a>
+          <a href="https://vericode.com.br/"><img src="imagem/VericodeExperiencie.png" alt=""></a>
+          <a href="https://www.alimentoswilson.com.br/"><img src="imagem/Wilson.png" alt=""></a>
+      </div>
+  </div>
+</div>
+
+
+        <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+        <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+        <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+        <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+        <script src="assets/vendor/php-email-form/validate.js"></script>
+      
+        <!-- Template Main JS File -->
+        <script src="assets/js/main.js"></script>
+  
+</body>
+</html>
