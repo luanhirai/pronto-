@@ -221,7 +221,7 @@ button {
     font-family: initial;
     text-decoration: overline;
     margin-top: 50px;
-    margin-bottom: 120px;
+    margin-bottom: 40px;
 }
 
 .eventos-encima {
@@ -249,20 +249,8 @@ button {
 
 
 
-.colab {
-  display: flex;
-  justify-content: space-between;
-}
 
-/* Estilos para telas pequenas (até 768px) */
-@media (max-width: 768px) {
-  .fotos {
-      flex-direction: column; /* Alinhar verticalmente os colaboradores */
-      align-items: center; /* Centralizar os colaboradores horizontalmente */
-  }
 
-  /* Ajuste os estilos específicos para telas pequenas conforme necessário */
-}
 
 
 
@@ -343,7 +331,6 @@ button {
 .fotos a:hover{
   transform: scale(1.1); 
 }
-
 
 
 

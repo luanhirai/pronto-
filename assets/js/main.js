@@ -271,3 +271,12 @@ function voltartela(){
   window.location.href = "index.html";
 
 }
+
+
+function voto(){
+    alert("Voto registrado. Obrigado!");
+}
+
+function inscricao(){
+  alert("Você foi inscrito com sucesso no evento! Aguardamos ansiosamente a sua participação.");
+}

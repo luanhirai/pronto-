@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Festa Linux - Infoeste 2023</title>
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="assets/other.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+
+    <!-- Favicons -->
+    <link href="assets/img/favicon.png" rel="icon">
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+        rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+    <!-- Template Main CSS File -->
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+    <style>
+        .event {
+            margin-top: 150px;
+        }
+
+        .img {
+            border-radius: 15px;
+            box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="cabecalho">
+        <div id="cabecalho-fixo" class="d-flex justify-content-around align-items-center cabeca">
+            <a href="index.html" class="sem-sublinhado">
+                <h1 id="text">35º INFOESTE</h1>
+            </a>
+            <!-- Menu "Eventos" com submenu -->
+            <div class="dropdown">
+                <a id="itens_cabeca" class="nav-link dropdown-toggle" href="#" id="eventosDropdown" role="button"
+                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Eventos
+                </a>
+                <div class="dropdown-menu" aria-labelledby="eventosDropdown">
+                    <a class="dropdown-item" href="networking.html">1ºNETWORKING NIGHT</a>
+                    <a class="dropdown-item" href="festa_linux.html">17º Festa linux</a>
+                    <a class="dropdown-item" href="maratona.html">17º Maratona de programação</a>
+                    <a class="dropdown-item" href="E-sport.html">1º E-SPORTs NIGHT</a>
+                    <a class="dropdown-item" href="fippetec.html">9º FIPPETEC</a>
+
+                </div>
+            </div>
+
+            <!-- Menu "Palestras" com submenu -->
+            <div class="dropdown">
+                <a id="itens_cabeca" class="nav-link dropdown-toggle" href="#" id="palestrasDropdown" role="button"
+                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Palestras
+                </a>
+                <div class="dropdown-menu" aria-labelledby="palestrasDropdown">
+                    <a class="dropdown-item" onclick="selecionarPalestrante('google')" href="index.html">Google</a>
+                    <a class="dropdown-item" onclick="selecionarPalestrante('curso-em-video')" href="index.html">Curso emvídeo</a>
+                    <a class="dropdown-item" onclick="selecionarPalestrante('spotify')" href="index.html">Spotify</a>
+                    <a class="dropdown-item" onclick="selecionarPalestrante('meta')" href="index.html">META</a>
+                    <a class="dropdown-item" onclick="selecionarPalestrante('totvs')" href="index.html">TOTVS</a>
+                </div>
+            </div>
+
+            <!-- Menu "Inscrições" com submenu -->
+            <div class="dropdown">
+                <a id="itens_cabeca" class="nav-link dropdown-toggle" href="#" id="inscricoesDropdown" role="button"
+                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Login
+                </a>
+                <div class="dropdown-menu" aria-labelledby="inscricoesDropdown">
+                    <a class="dropdown-item" href="login.html">Login</a>
+                    <a class="dropdown-item" href="cadastro-usuario-curso.html">Cadastrar no curso</a>
+                </div>
+            </div>
+
+            <!-- Menu "Contatos" com submenu -->
+            <div class="dropdown">
+                <a id="itens_cabeca" class="nav-link dropdown-toggle" href="#" id="contatosDropdown" role="button"
+                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Contatos
+                </a>
+                <div class="dropdown-menu" aria-labelledby="contatosDropdown">
+                    <a class="dropdown-item" href="contato.html">Contato</a>
+                </div>
+            </div>
+
+            <img id="img" src="fotos/esse.png" alt="">
+        </div>
+
+    </header>
+
+    <main>
+        <section id="linux-party-hero" class="event-hero">
+            <!-- Seção do herói do evento com imagem de fundo -->
+            <div class="event-hero-content">
+                <h1>Festa Linux</h1>
+                <p>Explorando o Mundo do Linux</p>
+            </div>
+        </section>
+
+        <section id="event-details" class="event-details">
+            <!-- Seção de detalhes do evento -->
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <h2>Detalhes do Evento</h2>
+                        <hr>
+                        <h4>O que é o Linux?</h4>
+                        <p>
+                            Linux é um sistema operacional alternativo ao Windows. Ele é estável, seguro e confiável.
+                            Existem várias aplicações gráficas disponíveis para o Linux, incluindo jogos, editores de
+                            texto, reprodutores de mp3, programas de mensagens instantâneas, editores de imagens,
+                            navegadores Web, entre outros, podendo ser utilizados dependendo da capacidade da sua
+                            máquina. O Linux possui também uma grande seleção de programas para servidores, incluindo
+                            servidores Web, sistemas de banco de dados, linguagens de script e ferramentas para
+                            administração remota, servidores de e-mail, etc.</p>
+                            <hr>
+                        <p>Junte-se a nós na Festa Linux para explorar e aprender mais sobre o sistema operacional
+                            Linux. Neste evento, ofereceremos aulas interativas para iniciantes e entusiastas do Linux,
+                            onde você aprenderá a usar e aproveitar ao máximo esse sistema poderoso e gratuito.</p>
+
+                    </div>
+                    <div class="col-lg-6">
+                        <img src="fotos/logofestalinux.jpg" alt="Festa Linux" class="img-fluid img">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="event-schedule" class="event-schedule">
+            <div class="container">
+                <h2>Data das Aulas</h2>
+                <hr>
+                <p>Data: 27 de Outubro de 2023</p>
+                <p>Horário: Laboratórios 103 e 105 - 08:00 - 12:00 e das 14:00 as 18:00hs</p>
+                <p>Local: Unoeste - Campus 1</p>
+                <p>Traga seu laptop e sua curiosidade!</p>
+            </div>
+        </section>
+
+        <section id="event-registration" class="event-registration">
+            <!-- Seção de informações de registro -->
+            <div class="container">
+                <h2>Registre-se Agora</h2>
+                <p>Garanta seu lugar na Festa Linux. Preencha o formulário abaixo para se inscrever:</p>
+                <!-- Formulário de Registro -->
+                <form action="#" method="POST">
+                    <!-- Inclua os campos do formulário aqui -->
+                    <div class="form-group">
+                        <label for="name">Nome</label>
+                        <input type="text" id="name" name="name" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">E-mail</label>
+                        <input type="email" id="email" name="email" class="form-control" required>
+                    </div>
+                    <button type="button" class="btn btn-primary" id="subscribe-button"
+                    onclick="inscricao()">Inscrever-se</button>                </form>
+            </div>
+        </section>
+    </main>
+    <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

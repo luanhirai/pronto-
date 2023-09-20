@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-sports night - Infoeste 2023</title>
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="assets/other.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+
+    <!-- Favicons -->
+    <link href="assets/img/favicon.png" rel="icon">
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+        rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+    <!-- Template Main CSS File -->
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+    <style>
+        .event {
+            margin-top: 150px;
+        }
+
+        .img {
+            border-radius: 15px;
+            box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="cabecalho">
+        <div id="cabecalho-fixo" class="d-flex justify-content-around align-items-center cabeca">
+            <a href="index.html" class="sem-sublinhado">
+                <h1 id="text">35º INFOESTE</h1>
+            </a>
+            <div class="dropdown">
+                <a id="itens_cabeca" class="nav-link dropdown-toggle" href="#" id="eventosDropdown" role="button"
+                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Eventos
+                </a>
+                <div class="dropdown-menu" aria-labelledby="eventosDropdown">
+                    <a class="dropdown-item" href="networking.html">1ºNETWORKING NIGHT</a>
+                    <a class="dropdown-item" href="festa_linux.html">17º Festa linux</a>
+                    <a class="dropdown-item" href="maratona.html">17º Maratona de programação</a>
+                    <a class="dropdown-item" href="E-sport.html">1º E-SPORTs NIGHT</a>
+                    <a class="dropdown-item" href="fippetec.html">9º FIPPETEC</a>
+
+                </div>
+            </div>
+
+            <div class="dropdown">
+                <a id="itens_cabeca" class="nav-link dropdown-toggle" href="#" id="palestrasDropdown" role="button"
+                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Palestras
+                </a>
+                <div class="dropdown-menu" aria-labelledby="palestrasDropdown">
+                    <a class="dropdown-item" onclick="selecionarPalestrante('google')" href="index.html">Google</a>
+                    <a class="dropdown-item" onclick="selecionarPalestrante('curso-em-video')" href="index.html">Curso em
+                        vídeo</a>
+                    <a class="dropdown-item" onclick="selecionarPalestrante('spotify')" href="index.html">Spotify</a>
+                    <a class="dropdown-item" onclick="selecionarPalestrante('meta')" href="index.html">META</a>
+                    <a class="dropdown-item" onclick="selecionarPalestrante('totvs')" href="index.html">TOTVS</a>
+                </div>
+            </div>
+
+            <div class="dropdown">
+                <a id="itens_cabeca" class="nav-link dropdown-toggle" href="#" id="inscricoesDropdown" role="button"
+                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Login
+                </a>
+                <div class="dropdown-menu" aria-labelledby="inscricoesDropdown">
+                    <a class="dropdown-item" href="login.html">Login</a>
+                    <a class="dropdown-item" href="cadastro-usuario-curso.html">Cadastrar no curso</a>
+                </div>
+            </div>
+
+            <div class="dropdown">
+                <a id="itens_cabeca" class="nav-link dropdown-toggle" href="#" id="contatosDropdown" role="button"
+                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Contatos
+                </a>
+                <div class="dropdown-menu" aria-labelledby="contatosDropdown">
+                    <a class="dropdown-item" href="contato.html">Contato</a>
+                </div>
+            </div>
+
+            <img id="img" src="fotos/esse.png" alt="">
+        </div>
+
+    </header>
+
+    <main>
+        <section id="esports-night-hero" class="event-hero">
+            <div class="event-hero-content">
+                <h1>E-sports Night</h1>
+                <p>Competição de Jogos Online</p>
+            </div>
+        </section>
+
+        <section id="event-details" class="event-details">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <h2>Detalhes do Evento</h2>
+                        <hr>
+                        <p>Prepare-se para a E-sports Night, onde os entusiastas de jogos online se enfrentarão em uma
+                            competição emocionante. Os jogos em destaque incluem CS:GO, League of Legends (LoL) e
+                            Valorant. A emoção está garantida!</p>
+
+                        <p>Prepare-se para jogar e torcer pelos seus favoritos!</p>
+                        <hr>
+                        <p>Estamos promovendo uma votação para decidir qual jogo será o destaque da noite. Escolha o seu
+                            favorito abaixo:</p>
+                        <form action="#" method="POST" id="game-vote-form">
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="game-vote" id="cs-vote" value="cs">
+                                <label class="form-check-label" for="cs-vote">
+                                    CS:GO
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="game-vote" id="lol-vote" value="lol">
+                                <label class="form-check-label" for="lol-vote">
+                                    League of Legends (LoL)
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="game-vote" id="valorant-vote"
+                                    value="valorant">
+                                <label class="form-check-label" for="valorant-vote">
+                                    Valorant
+                                </label>
+                            </div>
+                            <button type="button" class="btn btn-primary" id="vote-button"
+                                onclick="voto()">Votar</button>
+                        </form>
+                    </div>
+                    <div class="col-lg-6">
+                        <img src="fotos/e-sports.jpg" alt="E-sports Night" class="img-fluid img">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="event-competition" class="event-competition">
+            <div class="container">
+                <h2>Competição</h2>
+                <p>A competição na E-sports Night será intensa, com jogadores se enfrentando em três jogos populares:
+                    CS:GO, League of Legends (LoL) e Valorant. O Jogo será decidido por votação
+                    popular, então avise seus amigos para votar no jogo que vocês mais gostam!</p>
+                <p>Os jogadores terão a oportunidade de mostrar suas habilidades e estratégias, e a emoção estará em
+                    alta durante toda a noite.</p>
+                <hr>
+                <h3>Data da competição</h3>
+                <p>Data: 25 de Outubro de 2023</p>
+                <p>Horário: 18:30 - 21:30</p>
+                <p>Local: Unoeste - Campus 1</p>
+            </div>
+        </section>
+
+        <section id="event-registration" class="event-registration">
+            <div class="container">
+                <h2>Registre-se Agora</h2>
+                <p>Quer competir na E-sports Night? Preencha o formulário abaixo para se inscrever:</p>
+                <form action="#" method="POST">
+                    <div class="form-group">
+                        <label for="name">Nome</label>
+                        <input type="text" id="name" name="name" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">E-mail</label>
+                        <input type="email" id="email" name="email" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="game">Escolha o Jogo</label>
+                        <select id="game" name="game" class="form-control" required>
+                            <option value="cs">CS:GO</option>
+                            <option value="lol">League of Legends (LoL)</option>
+                            <option value="valorant">Valorant</option>
+                        </select>
+                    </div>
+                    <button type="button" class="btn btn-primary" id="subscribe-button"
+                        onclick="inscricao()">Inscrever-se</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

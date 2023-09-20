@@ -4,93 +4,182 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TESTE 3</title>
+    <title>Networking Night - Infoeste 2023</title>
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="assets/other.css">
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
 
-    <!-- Favicons -->
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
 
-    <!-- Template Main CSS File -->
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
     <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
     <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
     <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
     <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
-    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="assets/css/style.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
-    <style>
-
-.colab {
-    display: flex;
-    justify-content: space-between;
-}
-
-/* Estilos para telas pequenas (até 768px) */
-@media (max-width: 768px) {
-    .colab {
-        flex-direction: column; /* Organizar as imagens em coluna */
-        align-items: center; /* Centralizar as imagens horizontalmente */
+  <style>
+    .event{
+        margin-top: 150px;
     }
-}
+
+    .img {
+            border-radius: 15px;
+            box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+        }
 
 
-.tituloP{
-    text-align: center;
-    font-family: initial;
-    text-decoration: overline;
-    margin-top: 80px;
-    font-size: 40px;
-    margin-bottom: 90px;
-}
-
-
-.testado{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-
-}
-
-.testado a img{
-    width:150px;
-}
-
-
-    /* Ajuste os estilos específicos para telas pequenas conforme necessário */
-
-
-    </style>
+        .head{
+            box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+            background-color: aqua;
+        }
+  </style>
 </head>
+<body>
+    <header class="cabecalho">
+        <div id="cabecalho-fixo" class="d-flex justify-content-around align-items-center cabeca">
+            <a href="index.html" class="sem-sublinhado"><h1 id="text">35º INFOESTE</h1></a>
+            <!-- Menu "Eventos" com submenu -->
+            <div class="dropdown">
+                <a id="itens_cabeca" class="nav-link dropdown-toggle" href="#" id="eventosDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Eventos
+                </a>
+                <div class="dropdown-menu" aria-labelledby="eventosDropdown">
+                    <a class="dropdown-item" href="networking.html">1ºNETWORKING NIGHT</a>
+                    <a class="dropdown-item" href="festa_linux.html">17º Festa linux</a>
+                    <a class="dropdown-item" href="maratona.html">17º Maratona de programação</a>
+                    <a class="dropdown-item" href="E-sport.html">1º E-SPORTs NIGHT</a>
+                    <a class="dropdown-item" href="fippetec.html">9º FIPPETEC</a>
 
-<body onload="selecionarPalestrante('google')">
-    
-    <div class="parceiros">
-        <h1 class="titulo-eventos d-flex flex-row justify-content-center">Colaboradores</h1>
-        <div class="colab testado">
-            <a href="https://analytics2go.com/"><img src="imagem/A2Go.png" alt=""></a>
-            <a href="https://www.b3.com.br/pt_br/institucional"><img src="imagem/B3.svg" alt=""></a>
-            <a href="https://www.cobmais.com.br/"><img src="imagem/cobmais.png" alt=""></a>
-            <a href="https://www.egestora.com.br/"><img src="imagem/EGestora.png" alt=""></a>
-            <a href="http://facopp.unoeste.br/facopp/"><img src="imagem/EscolaComunicacao.png" alt=""></a>
-            <a href="https://www.havan.com.br/"><img src="imagem/Havan.png" alt=""></a>
-            <a href="https://www.itau.com.br/"><img src="imagem/Itau.png" alt=""></a>
-            <a href="https://www.instagram.com/gourmetuniversitariopp/"><img src="imagem/logo-espaco goumert.jpg" alt=""></a>
-            <a href="https://www.smarthint.co/"><img src="imagem/Magalu.png" alt=""></a>
-            <a href="https://www.unoeste.br/AUnoeste/Nedhu"><img src="imagem/NEDHU.png" alt=""></a>
-            <a href="https://www.rubcube.com/"><img src="imagem/rubcube.svg" alt=""></a>
-            <a href="https://vericode.com.br/"><img src="imagem/VericodeExperiencie.png" alt=""></a>
-            <a href="https://www.alimentoswilson.com.br/"><img src="imagem/Wilson.png" alt=""></a>
+                </div>
+            </div>
+
+            <!-- Menu "Palestras" com submenu -->
+            <div class="dropdown">
+                <a id="itens_cabeca" class="nav-link dropdown-toggle" href="#" id="palestrasDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Palestras
+                </a>
+                <div class="dropdown-menu" aria-labelledby="palestrasDropdown">
+                    <a class="dropdown-item" onclick="selecionarPalestrante('google')" href="index.html">Google</a>
+                    <a class="dropdown-item" onclick="selecionarPalestrante('curso-em-video')" href="index.html">Curso emvídeo</a>
+                    <a class="dropdown-item" onclick="selecionarPalestrante('spotify')" href="index.html">Spotify</a>
+                    <a class="dropdown-item" onclick="selecionarPalestrante('meta')" href="index.html">META</a>
+                    <a class="dropdown-item" onclick="selecionarPalestrante('totvs')" href="index.html">TOTVS</a>
+                </div>
+            </div>
+
+            <!-- Menu "Inscrições" com submenu -->
+            <div class="dropdown">
+                <a id="itens_cabeca" class="nav-link dropdown-toggle" href="#" id="inscricoesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Login
+                </a>
+                <div class="dropdown-menu" aria-labelledby="inscricoesDropdown">
+                    <a class="dropdown-item" href="login.html">Login</a>
+                    <a class="dropdown-item" href="cadastro-usuario-curso.html">Cadastrar no curso</a>
+                </div>
+            </div>
+
+            <!-- Menu "Contatos" com submenu -->
+            <div class="dropdown">
+                <a id="itens_cabeca" class="nav-link dropdown-toggle" href="#" id="contatosDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Contatos
+                </a>
+                <div class="dropdown-menu" aria-labelledby="contatosDropdown">
+                    <a class="dropdown-item" href="contato.html">Contato</a>
+                </div>
+            </div>
+
+            <img id="img" src="fotos/esse.png" alt="">
         </div>
+            
+</header>
+
+<main>
+    <div>
+        <section id="networking-night-hero" class="event-hero">
+        <!-- Seção do herói do evento com imagem de fundo -->
+        <div class="event-hero-content">
+            <h1>Networking Night</h1>
+            <p>Conecte-se, Colabore, Cresça!</p>
+        </div>
+    </section>
+
+    <section id="event-details" class="event-details">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <h2>Detalhes do Evento</h2>
+                    <hr>
+                    <p>Junte-se a nós para uma noite inesquecível de networking e oportunidades de fazer novos contatos profissionais e amizades. É uma ótima oportunidade para expandir sua rede de contatos em um ambiente descontraído e amigável.</p>
+                    <p>Este evento é voltado para profissionais de todas as áreas, estudantes, empreendedores e entusiastas que desejam se conectar com pessoas que compartilham interesses semelhantes.</p>
+                    
+                </div>
+                <div class="col-lg-6">
+                    <!-- Imagem ou vídeo promocional do evento -->
+                    <img src="fotos/networking.jfif" alt="Networking Night" class="img-fluid img">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="event-schedule" class="event-schedule">
+        <!-- Seção de programação do evento -->
+        <div class="container">
+            <h2>Programação</h2>
+            <hr>
+            <p>Data: 27 de Outubro de 2023</p>
+            <p>Horário: 18:00 - 21:00</p>
+            <p>Local: Local do Evento</p>
+            <p>Esperamos vê-lo lá!</p>
+            <!-- Inclua aqui a programação do evento, como palestras, atividades, etc. -->
+        </div>
+    </section>
+
+    <section id="event-registration" class="event-registration">
+        <!-- Seção de informações de registro -->
+        <div class="container">
+            <h2>Registre-se Agora</h2>
+            <p>Garanta seu lugar no evento. Preencha o formulário abaixo para se inscrever:</p>
+            <!-- Formulário de Registro -->
+            <form action="#" method="POST">
+                <!-- Inclua os campos do formulário aqui -->
+                <div class="form-group">
+                    <label for="name">Nome</label>
+                    <input type="text" id="name" name="name" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" name="email" class="form-control" required>
+                </div>
+                <button type="button" class="btn btn-primary" id="subscribe-button"
+                onclick="inscricao()">Inscrever-se</button>            </form>
+        </div>
+    </section>
     </div>
     
-    
-    
-    
+</main>
+<script src="assets/js/main.js"></script>
 
 </body>
 </html>
